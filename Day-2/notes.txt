@@ -1,0 +1,41 @@
+NPM
+npm does not have any full form , it is generally known as node package manager 
+Because it manages packages ,but its full form does not stand for node package manager
+All different packages,libraries,utilities are included in NPM
+when a basic ceate react app is made npm is defaulty there inside it.
+ after intializing npm in the project package.json file appears
+
+Package.json
+it is a configuration file for the npm keeps a track of what version is being installed
+
+Dependencies->Dev  - development phase required
+            ->normal - used in production
+
+Parcel - Dependency as a bunddler so minimize the code and packs the code 
+do's many things
+-Dev build
+-Local server
+-HMR = hot module replacement
+-File Watchinng Algorithm - keeps a track of every changes through while saving the files and changes in the browser 
+-Faster Build -due to chaching
+-Image Optimization
+-Minification for production
+-Bundling
+-Compressing 
+-Tree shaking remove unusedfiles 
+
+Version range specifiers
+'^' - caret allows updates to minor Version
+'~' - tilde allows updates directly to majotr versions
+
+Package-Lock.json-> configuration of the exact versions of the dependencies  and transitive dependencies also
+
+The '.gitignore' file is used to put the files that are not neccessay to put in to the git
+Node modules is such a huge file it would is not supposed to put the node modules in github ,
+because as we have the pcakge and package-lock files we can regenate the node modules by simply typing the command 'npm install'.
+
+npx -> executing a package(parcel)
+Fetching react and reactdom from cdn links is not preffered because it is a cost;y operation and also difficult to manage the version 
+
+npx parcel index.html -> development build this command starts the server within 
+npx parcel build index.html -> production build
